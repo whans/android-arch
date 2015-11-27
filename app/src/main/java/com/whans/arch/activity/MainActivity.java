@@ -1,4 +1,4 @@
-package com.whans.arch;
+package com.whans.arch.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,7 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity
+import com.whans.arch.R;
+
+public class MainActivity extends ArchBaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
