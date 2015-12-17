@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
+import com.whans.model.utils.Logging;
 
 /**
  * @author whans
@@ -17,6 +18,7 @@ public class ArchApplication extends Application {
     public void onCreate() {
         super.onCreate();
         refWatcher = installLeakCanary();
+        Logging.initialLogging();
     }
 
     public static RefWatcher getRefWatcher(Context context) {
